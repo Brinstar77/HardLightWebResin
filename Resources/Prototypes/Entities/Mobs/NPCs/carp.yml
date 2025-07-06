@@ -95,6 +95,7 @@
     interfaces:
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
+  - type: Vore 
 
 - type: entity
   parent: BaseMobCarp
