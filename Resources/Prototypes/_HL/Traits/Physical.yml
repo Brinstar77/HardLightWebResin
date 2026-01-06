@@ -1,7 +1,7 @@
 - type: trait
   id: Leadfooted
   name: Lead-footed
-  description: somehow able to stay standing during the rigors of FTL 
+  description: somehow able to stay standing during the rigors of FTL
   category: Physical
   cost: 3
   components:
@@ -10,7 +10,7 @@
 - type: trait
   id: Innoculated
   name: Innoculated
-  description: made Zombie immune due to regular ambuzol plus innoculations. 
+  description: made Zombie immune due to regular ambuzol plus innoculations.
   category: Physical
   cost: 5
   components:
@@ -19,7 +19,7 @@
 - type: trait
   id: insulated
   name: Insulated
-  description: through natural or artificial means you're naturally insulated against electricity 
+  description: through natural or artificial means you're naturally insulated against electricity
   category: Physical
   cost: 10
   speciesBlacklist:
@@ -31,7 +31,7 @@
   - cryoresistant
   components:
   - type: Insulated
-  
+
 - type: trait
   id: fireproof
   name: fireproof
@@ -46,16 +46,15 @@
   - snakeeater
   - cryoresistant
   components:
-  - type: Flammable
-    fireSpread: false
-    damage:
-      types:
-        Heat: 0.01
-  - type: Temperature
-    heatDamageThreshold: 20000
+  - type: DamageProtectionBuff
+    modifiers:
+      dermal:
+        id: FireproofTrait
+        coefficients:
+          Heat: 0.01
   - type: FireProtection
-    reduction: 1
- 
+    reduction: 0
+
 - type: trait
   id: radproof
   name: radproof
@@ -70,11 +69,13 @@
   - snakeeater
   - cryoresistant
   components:
-  - type: Armor
+  - type: DamageProtectionBuff
     modifiers:
-      coefficients:
-        Radiation: 0.01
-      
+      dermal:
+        id: RadproofTrait
+        coefficients:
+          Radiation: 0.01
+
 - type: trait
   id: snakeeater
   name: snakeeater
@@ -89,15 +90,17 @@
   - radproof
   - cryoresistant
   components:
-  - type: Armor
+  - type: DamageProtectionBuff
     modifiers:
-      coefficients:
-        Poison: 0.01
-  
+      dermal:
+        id: SnakeeaterTrait
+        coefficients:
+          Poison: 0.01
+
 - type: trait
   id: cryoresistant
   name: cryo resistant
-  description: through natural or artificial means you're naturally insulated against the cold 
+  description: through natural or artificial means you're naturally insulated against the cold
   category: Physical
   cost: 8
   speciesBlacklist:
@@ -108,13 +111,17 @@
   - snakeeater
   - radproof
   components:
-  - type: Temperature
-    coldDamageThreshold: -250
+  - type: DamageProtectionBuff
+    modifiers:
+      dermal:
+        id: ColdproofTrait
+        coefficients:
+          Cold: 0.01
 
 - type: trait
   id: NaturalRegen
   name: natural regeneration
-  description: naturally capable of healing from lesser injuries. 
+  description: naturally capable of healing from lesser injuries.
   category: Physical
   cost: 6
   mutuallyExclusiveTraits:
@@ -131,11 +138,11 @@
         Brute: -0.3
         Burn: -0.3
         Airloss: -1
-        
+
 - type: trait
   id: UnnaturalRegen
   name: unnatural regeneration
-  description: capable of healing from most injuries with unnatural efficiency. 
+  description: capable of healing from most injuries with unnatural efficiency.
   category: Physical
   cost: 8
   mutuallyExclusiveTraits:
@@ -153,5 +160,5 @@
         Brute: -0.3
         Burn: -0.3
         Airloss: -1
-     
+
 
