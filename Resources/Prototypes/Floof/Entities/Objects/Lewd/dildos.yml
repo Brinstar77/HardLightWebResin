@@ -11,6 +11,32 @@
 
 - type: entity
   parent: BaseDildo
+  id: Sotekdildo
+  name: Sotek dildo
+  description: It seems to move on it's own
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_sotek.rsi
+    state: icon
+    shader: unshaded
+    scale: 0.4, 0.4
+  - type: PointLight
+    Energy: 20
+    Radius: 1.5
+  - type: Item
+    size: Normal
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        scale: 0.5, 0.5
+        shader: unshaded
+      right:
+      - state: inhand-right
+        scale: 0.5, 0.5
+        shader: unshaded
+
+- type: entity
+  parent: BaseDildo
   id: AvianDildo
   name: avian dildo
   description: A dildo in the shape of a bird's "caw-k".
