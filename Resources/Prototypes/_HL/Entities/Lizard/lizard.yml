@@ -55,7 +55,7 @@
     allowSpeech: true
     makeSentient: true
     name: ghost-role-information-rainlizard-name
-    description: ghost-role-information- rainlizard-description
+    description: ghost-role-information-rainlizard-description
     rules: ghost-role-information-rainlizard-rules
     raffle:
       settings: default
@@ -530,9 +530,9 @@
     baseWalkSpeed: 4
     baseSprintSpeed: 5.5
   - type: SegmentedEntity
-    numberOfSegments: 8
+    numberOfSegments: 3
     initialRadius: 0.8
-    staticOffset: 1
+    staticOffset: 5
     staticScale: 0.9
     initialSegmentId: RedRainLizardInitialSegment
     segmentId: RedRainLizardSegment
