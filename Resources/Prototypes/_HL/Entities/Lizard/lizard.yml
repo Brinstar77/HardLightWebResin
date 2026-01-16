@@ -46,8 +46,8 @@
     animation: WeaponArcBite
     damage:
       types:
-      Blunt: 5
-      Slash: 5
+        Blunt: 5
+        Slash: 5
   - type: Puller
     needsHands: false
   - type: GhostRole
@@ -168,8 +168,8 @@
     animation: WeaponArcBite
     damage:
       types:
-      Blunt: 6
-      Slash: 6
+        Blunt: 6
+        Slash: 6
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.5
     baseSprintSpeed: 3.5
@@ -238,8 +238,8 @@
     animation: WeaponArcBite
     damage:
       types:
-      Blunt: 7
-      Slash: 7
+        Blunt: 7
+        Slash: 7
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 3.8
@@ -308,8 +308,8 @@
     animation: WeaponArcBite
     damage:
       types:
-      Blunt: 8
-      Slash: 8
+        Blunt: 8
+        Slash: 8
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 4
@@ -384,8 +384,8 @@
     animation: WeaponArcBite
     damage:
       types:
-      Blunt: 8
-      Slash: 8
+        Blunt: 8
+        Slash: 8
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 4.5
@@ -454,8 +454,8 @@
     animation: WeaponArcBite
     damage:
       types:
-      Blunt: 10
-      Slash: 12
+        Blunt: 10
+        Slash: 12
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 4
@@ -524,8 +524,8 @@
     animation: WeaponArcBite
     damage:
       types:
-      Blunt: 13
-      Slash: 15
+        Blunt: 13
+        Slash: 15
   - type: MovementSpeedModifier
     baseWalkSpeed: 4
     baseSprintSpeed: 5.5
