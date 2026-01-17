@@ -238,4 +238,4 @@
         targetDistance: 1000
     - !type:HTNPrimitiveTask
       operator: !type:WaitOperator
-        time: 3
+        time: 30
