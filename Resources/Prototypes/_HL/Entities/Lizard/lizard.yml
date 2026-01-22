@@ -389,7 +389,7 @@
     speedModifierThresholds:
       120: 0.5
   - type: BluespaceShunt
-    cooldowntime: 1
+    cooldownTime: 1
   - type: Stamina
     critThreshold: 100
   - type: MeleeWeapon
