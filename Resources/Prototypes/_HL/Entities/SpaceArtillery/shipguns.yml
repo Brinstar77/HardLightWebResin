@@ -570,7 +570,7 @@
 - type: entity
   id: AIWeaponTurretpointflayer
   name: Hostile energy thrower
-  parent: [ WeaponLaserTurretFlayer ]
+  parent: [ WeaponTurretScylla ]
   description: An AI controlled weapon, you're too close.  
   components:
   - type: NpcFactionMember
